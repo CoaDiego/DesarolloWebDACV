@@ -1,0 +1,22 @@
+.contenedor{
+    width: 700px;
+    height: 600px;
+}
+
+.Rojo{
+    width: 100%;
+    height: 200px;
+    background-color: red;
+}
+
+.Amarillo{
+    width: 100%;
+    height: 200px;
+    background-color: yellow;
+}
+
+.Verde{
+    width: 100%;
+    height: 200px;
+    background-color: green;
+}
