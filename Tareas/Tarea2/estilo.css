@@ -1,0 +1,122 @@
+* {
+    /* background-color: rgb(168, 230, 175); */
+    background-color: aliceblue;
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    /* background-color: rgb(68, 143, 197); */
+    width: 99%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.Encabezado {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    /* display:inline-block; */
+    border: 1px solid black;
+    align-items: center;
+    /* background-color: rgb(154, 181, 103); */
+}
+
+.logo1 {
+    flex-basis: 99px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo2 {
+    flex-basis: 99px;
+    display: flex;
+    justify-content: right;
+}
+
+#logos {
+    width: 50px;
+    height: 50px;
+}
+
+.titulo {
+    width: 700px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(154, 181, 103);
+}
+
+.SeccionA {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.izquierda {
+    background-color: aqua;
+    flex-basis: 250px;
+}
+
+.contenido {
+    background-color: rgb(25, 53, 64);
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+}
+
+/*--------------------- Menu-------------------- */
+ul.menuizquierda {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    border-left: 1px solid #7C7C7C;
+    flex-direction: column;
+}
+
+ul.menuizquierda li a {
+    padding: 5px;
+    display: block;
+}
+
+ul.menuizquierda li a:link,
+ul.menuizquierda li a:visited {
+    margin: 2px;
+    text-decoration: none;
+    color: #333;
+    background: rgb(154, 181, 103);
+    border-top: 1px solid #7C7C7C;
+    border-right: 1px solid #7C7C7C;
+    border-bottom: 1px solid #9C9C9C;
+}
+
+ul.menuizquierda li a:hover {
+    background-color: rgb(186, 240, 170);
+
+}
+
+/*--------------------- Imagenes -------------------- */
+
+.contentIMG {
+    display:flex;
+    /* flex-direction: row;
+    flex-wrap: wrap-reverse;  */
+    flex-flow: row wrap;
+    /* justify-content:space-between; */
+    background-color: rgb(25, 53, 64);
+    text-align: center;
+    
+ }
+
+ .item {
+    background-color: rgb(25, 53, 64);
+    width: 210px;
+    margin: 5px;
+    text-align: center;
+    /* order:2; */
+ }
