@@ -12,18 +12,17 @@
     $filas = $_GET["f"];
     $columnas = $_GET["c"];
 
-    echo'<table>';
+    echo'<table border=1>';
 
     $contador = 1;
 
-    for($i = 1; $i <= $filas; $i++){
+    for($i = 0; $i < $filas; $i++){
         
         echo"<tr>";
         
-        for($j =1; $j <= $columnas; $j++) {
+        for($j =0; $j < $columnas; $j++) {
 
             echo"<td>".$contador."</td>";
-
             $contador++;
         }
     
