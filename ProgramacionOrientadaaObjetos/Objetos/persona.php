@@ -1,0 +1,1 @@
+<!-- Constructor solo inicializa valores -->

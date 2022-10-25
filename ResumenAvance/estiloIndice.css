@@ -1,0 +1,183 @@
+/* Esto afecta a toda la pagina */
+* {
+    /* background-color: rgb(168, 230, 175); */
+    text-align: center;
+    margin:auto;
+    /* padding-left: 10px; */
+}
+
+.contenedorPrincipal {
+    width: 900px;
+    height: 600px;
+    border: 1px solid red;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.encabezado {
+    background-color: rgb(201, 210, 211);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; /* Ajusta a los Laterales */
+    text-align: center;
+    height: 10%;
+}
+
+.logo {
+    flex-basis: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+}
+
+
+.titulo {
+    padding-top: 18px;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.titulo3 {
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+#css {
+    width: 50px;
+    height: 50px;
+}
+
+#html {
+    width: 50px;
+    height: 50px;
+}
+
+.subTitulo {
+    background-color: rgb(195, 150, 119);
+    box-sizing: border-box;
+    padding-top: 5px;
+    height: 5%;
+}
+
+.menu {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-around;
+    background-color: rgb(219, 183, 105);
+    width: 100%;
+    height: 75%;
+    margin: auto;
+}
+
+.menuIzquierda {
+    border: 1px solid rgb(154, 7, 240);
+    background-color: rgb(154, 181, 103);
+    box-sizing: border-box;
+    height: 100%;
+    flex-basis: 20%;
+    margin: auto;
+    background-image: url("images/roto.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.contenido {
+    box-sizing: border-box;
+    align-items: center;
+    border: 1px solid rgb(11, 7, 240);
+    flex-basis: 60%;
+    height: 100%;
+    padding: 10px;
+    background-image: url("images/png3.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.menuDerecha {
+    box-sizing: border-box;
+    border: 1px solid rgb(240, 7, 201);
+    background-color: rgb(154, 181, 103);
+    margin: auto;
+    height: 100%;
+    flex-basis: 20%;
+    background-image: url("images/roto.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.piePagina {
+    box-sizing: border-box;
+    height: 10%;
+    /* padding-top: 3px; */
+    text-align: center;
+    display: flex;
+    justify-content: space-between; 
+    background-color: rgb(154, 181, 103);
+}
+
+
+/* ///////// Menu Izquierda //////////// */
+
+ul.menuvertical {
+    list-style: none;
+    /* display: flex; */
+    padding: 0;
+    border-left: 1px solid #7C7C7C;
+    flex-direction: column;
+}
+
+ul.menuvertical li a {
+    padding: 5px;
+    display: block;
+}
+
+ul.menuvertical li a:link,
+ul.menuvertical li a:visited {
+    margin: 2px;
+    text-decoration: none;
+    color: #333;
+    background: rgb(55, 154, 214);
+    border-top: 1px solid #7C7C7C;
+    border-right: 1px solid #7C7C7C;
+    border-bottom: 1px solid #9C9C9C;
+}
+
+ul.menuvertical li a:hover {
+    background-color: rgb(195, 150, 119);
+}
+
+
+/* /////////Menu Derecha//////////// */
+
+ul.menuvertical2 {
+    list-style: none;
+    /* display: flex; */
+    padding: 0;
+    border-left: 1px solid #7C7C7C;
+    flex-direction: column;
+}
+
+ul.menuvertical2 li a {
+    padding: 5px;
+    display: block;
+}
+
+ul.menuvertical2 li a:link,
+ul.menuvertical2 li a:visited {
+    margin: 2px;
+    text-decoration: none;
+    color: #333;
+    background: rgb(228, 77, 38);
+    border-top: 1px solid #7C7C7C;
+    border-right: 1px solid #7C7C7C;
+    border-bottom: 1px solid #9C9C9C;
+}
+
+ul.menuvertical2 li a:hover {
+    background-color: rgb(195, 150, 119);
+}
