@@ -1,4 +1,3 @@
-
 <?php  
     if (isset($_COOKIE["nro_visitas"])) {
        $nro_visitas = $_COOKIE["nro_visitas"];
@@ -59,22 +58,21 @@
                     <li><a href="pregunta3.php">Pregunta 3</a></li>
                 </ul>
             </div>
-
             <div class="contenidoPrincipal">
-            <form action="mes.php" method="get">
-                <label for="n">Introducir n</label>
-                <input type="number" name="n" > 
-                <input type="submit" value="Enviar">
-            </form>
+                
+                <h1>Menu</h1>
+                    <ul class="preguntas">
+                        <li><a href="formularioInsertar.php">Insertar</a></li>
+                        <li><a href="eliminarAlumno.php">Eliminar</a></li>
+                        <li><a href="mostrarAlumno.php">Mostrar</a></li>
+                    </ul>
             </div>
 
             <div class="menu">
                 <ul class="preguntas">
-                    
                     <li><a href="pregunta4.php">Pregunta 4</a></li>
                     <li><a href="pregunta5.php">Pregunta 5</a></li>
                     <li><a href="pregunta6.php">Pregunta 6</a></li>
-
                 </ul>
             </div>
         </div>

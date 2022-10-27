@@ -1,4 +1,3 @@
-
 <?php  
     if (isset($_COOKIE["nro_visitas"])) {
        $nro_visitas = $_COOKIE["nro_visitas"];
@@ -35,9 +34,7 @@
 
                         <div class="facuColor">Facultad de Tecnologia
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span style="color: red ;font-size: 15px;">Sucr
-                            <span style="color: yellow;">e-Bol</span>
-                            <span style="color: green;">ivia</span>
+                            <span style="color: red ;font-size: 15px;">Sucr<span style="color: yellow;">e-Bol</span><span style="color: green;">ivia</span>
                         </div>
               
 
@@ -61,20 +58,55 @@
             </div>
 
             <div class="contenidoPrincipal">
-            <form action="mes.php" method="get">
-                <label for="n">Introducir n</label>
-                <input type="number" name="n" > 
-                <input type="submit" value="Enviar">
-            </form>
-            </div>
 
+            <?php
+            $filas = $_GET['filas'];
+            $columnas = $_GET['columnas'];
+            ?>
+
+            <table>
+                <?php
+                $primer=array('Viva','Mi','Sucre');
+                $segundo=array('Cuna','de','Libertad');
+                for ($i = 0; $i < $filas; $i++) {
+                ?> <tr>
+                        <?php
+                        for ($j = 0; $j < $columnas; $j++) {
+        
+                            if ($j % 2 == 0) {
+                                if ($i % 2 == 0) {
+                                    echo '<td class="celeste">'.$primer[$i%3].'</td>';
+                                }
+                                else {
+                                    echo '<td class="blanco">'.$primer[$i%3].'</td>';
+                                }
+                            } else {
+                                if ($i % 2 == 0) {
+                                    echo '<td class="blanco">'.$segundo[$i%3].'</td>';
+        
+                                }
+                                else    {
+                                    echo '<td class="rojo">'.$segundo[$i%3].'</td>';
+                                }
+                            }
+                            
+                        }
+                        ?>
+                    </tr>
+                <?php
+                }
+                ?>
+        
+        
+            </table>
+        
+               
+            </div>
             <div class="menu">
                 <ul class="preguntas">
-                    
                     <li><a href="pregunta4.php">Pregunta 4</a></li>
                     <li><a href="pregunta5.php">Pregunta 5</a></li>
                     <li><a href="pregunta6.php">Pregunta 6</a></li>
-
                 </ul>
             </div>
         </div>
@@ -84,7 +116,7 @@
             <td>Alumnno: Coa Veliz Diego Armando</td><br>
             <td>CU: 5632247</td><br>
             <div class="contador">
-                 </div>
+                 </div class="">
             <?php echo "Numero de visitas al sitio: $nro_visitas vez";?>
         </div>
 

@@ -1,4 +1,3 @@
-
 <?php  
     if (isset($_COOKIE["nro_visitas"])) {
        $nro_visitas = $_COOKIE["nro_visitas"];
@@ -35,9 +34,7 @@
 
                         <div class="facuColor">Facultad de Tecnologia
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span style="color: red ;font-size: 15px;">Sucr
-                            <span style="color: yellow;">e-Bol</span>
-                            <span style="color: green;">ivia</span>
+                            <span style="color: red ;font-size: 15px;">Sucr<span style="color: yellow;">e-Bol</span><span style="color: green;">ivia</span>
                         </div>
               
 
@@ -59,22 +56,23 @@
                     <li><a href="pregunta3.php">Pregunta 3</a></li>
                 </ul>
             </div>
-
             <div class="contenidoPrincipal">
-            <form action="mes.php" method="get">
-                <label for="n">Introducir n</label>
-                <input type="number" name="n" > 
-                <input type="submit" value="Enviar">
+
+            <form action="tablaintercalado.php" method="get">
+
+                <label for="filas">Filas</label>
+                <input type="number" name="filas" ><br>
+                <label for="columnas">Columnas</label>
+                <input type="number" name="columnas" > <br>
+                <input type="submit" value="Imprimir tabla">
+        
             </form>
             </div>
-
             <div class="menu">
                 <ul class="preguntas">
-                    
                     <li><a href="pregunta4.php">Pregunta 4</a></li>
                     <li><a href="pregunta5.php">Pregunta 5</a></li>
                     <li><a href="pregunta6.php">Pregunta 6</a></li>
-
                 </ul>
             </div>
         </div>

@@ -61,20 +61,23 @@
             </div>
 
             <div class="contenidoPrincipal">
-            <form action="mes.php" method="get">
-                <label for="n">Introducir n</label>
-                <input type="number" name="n" > 
-                <input type="submit" value="Enviar">
-            </form>
+            <?php 
+            include("listaAlumnos.php");
+            session_start();
+            if (isset($_SESSION['lista'])) {
+                $_SESSION['lista']->Eliminaralumno();
+            }
+            
+            ?>
+            <meta http-equiv="refresh" content="3; url=pregunta3.php">
+            Se elimino correctanmente
             </div>
 
             <div class="menu">
                 <ul class="preguntas">
-                    
                     <li><a href="pregunta4.php">Pregunta 4</a></li>
                     <li><a href="pregunta5.php">Pregunta 5</a></li>
                     <li><a href="pregunta6.php">Pregunta 6</a></li>
-
                 </ul>
             </div>
         </div>

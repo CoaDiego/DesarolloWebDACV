@@ -1,4 +1,3 @@
-
 <?php  
     if (isset($_COOKIE["nro_visitas"])) {
        $nro_visitas = $_COOKIE["nro_visitas"];
@@ -35,9 +34,7 @@
 
                         <div class="facuColor">Facultad de Tecnologia
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span style="color: red ;font-size: 15px;">Sucr
-                            <span style="color: yellow;">e-Bol</span>
-                            <span style="color: green;">ivia</span>
+                            <span style="color: red ;font-size: 15px;">Sucr<span style="color: yellow;">e-Bol</span><span style="color: green;">ivia</span>
                         </div>
               
 
@@ -59,22 +56,72 @@
                     <li><a href="pregunta3.php">Pregunta 3</a></li>
                 </ul>
             </div>
-
             <div class="contenidoPrincipal">
-            <form action="mes.php" method="get">
-                <label for="n">Introducir n</label>
-                <input type="number" name="n" > 
-                <input type="submit" value="Enviar">
-            </form>
-            </div>
+            <?php
+                if (isset($_COOKIE['candidato1']))
+                {
+                	$votos_candidato1=$_COOKIE['candidato1'];
+                }
+                else
+                {
+                   $votos_candidato1=0;	
+                }
+                if (isset($_COOKIE['candidato2']))
+                {
+                	$votos_candidato2=$_COOKIE['candidato2'];
+                }
+                else
+                {
+                   $votos_candidato2=0;	
+                }
+                
+                isset($_COOKIE['candidato3'])?
+                $votos_candidato3=$_COOKIE['candidato3']:$votos_candidato3=0;
+                
+                isset($_COOKIE['candidato4'])?
+                $votos_candidato4=$_COOKIE['candidato4']:$votos_candidato4=0;
+                
+                
+                $votacion=$_POST['votacion'];
+                
+                switch ($votacion) {
+                	case 'candidato1':
+                		$votos_candidato1++;
+                		break;
+                	case 'candidato2':
+                		$votos_candidato2++;
+                		break;
+                	case 'candidato3':
+                		$votos_candidato3++;
+                		break;
+                	case 'candidato4':
+                		$votos_candidato4++;
+                		break;
+                }
 
+                ?>
+
+                Resultados votación 	<br>
+                <ul class="preguntas">
+                	<li>Candidato 1:<span ><?php echo $votos_candidato1 ?> </span></li>
+                	<li>Candidato 2:<span ><?php echo $votos_candidato2 ?> </span></li>
+                	<li>Candidato 3:<span ><?php echo $votos_candidato3 ?> </span></li>
+                	<li>Candidato 4:<span ><?php echo $votos_candidato4 ?> </span></li>
+                </ul>
+                <?php
+                	setcookie('candidato1',$votos_candidato1,0);
+                	setcookie('candidato2',$votos_candidato2,0);
+                	setcookie('candidato3',$votos_candidato3,0);
+                	setcookie('candidato4',$votos_candidato4,0);
+                ?>
+
+
+            </div>
             <div class="menu">
                 <ul class="preguntas">
-                    
                     <li><a href="pregunta4.php">Pregunta 4</a></li>
                     <li><a href="pregunta5.php">Pregunta 5</a></li>
                     <li><a href="pregunta6.php">Pregunta 6</a></li>
-
                 </ul>
             </div>
         </div>

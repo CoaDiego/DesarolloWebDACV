@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+
+
+</body>
+
+</html>
 
 <?php  
     if (isset($_COOKIE["nro_visitas"])) {
@@ -35,9 +52,7 @@
 
                         <div class="facuColor">Facultad de Tecnologia
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span style="color: red ;font-size: 15px;">Sucr
-                            <span style="color: yellow;">e-Bol</span>
-                            <span style="color: green;">ivia</span>
+                            <span style="color: red ;font-size: 15px;">Sucr<span style="color: yellow;">e-Bol</span><span style="color: green;">ivia</span>
                         </div>
               
 
@@ -59,22 +74,35 @@
                     <li><a href="pregunta3.php">Pregunta 3</a></li>
                 </ul>
             </div>
-
             <div class="contenidoPrincipal">
-            <form action="mes.php" method="get">
-                <label for="n">Introducir n</label>
-                <input type="number" name="n" > 
-                <input type="submit" value="Enviar">
+
+            <?php
+            $n = $_POST['n'];
+            ?>
+
+            <form action="ordenar.php" method="post">
+                <input type="hidden" name="n" value="<?php echo $n; ?>">
+
+                <?php
+                for ($i = 0; $i < $n; $i++) {
+                ?>
+
+                <input type="number" name="numero<?php echo $i; ?>"> <br>
+
+                <?php
+                }
+                ?>
+
+                <input type="submit" value="Ordenar">
+                
             </form>
             </div>
 
             <div class="menu">
                 <ul class="preguntas">
-                    
                     <li><a href="pregunta4.php">Pregunta 4</a></li>
                     <li><a href="pregunta5.php">Pregunta 5</a></li>
                     <li><a href="pregunta6.php">Pregunta 6</a></li>
-
                 </ul>
             </div>
         </div>

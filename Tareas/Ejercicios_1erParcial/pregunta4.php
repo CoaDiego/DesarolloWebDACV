@@ -61,20 +61,19 @@
             </div>
 
             <div class="contenidoPrincipal">
-            <form action="mes.php" method="get">
-                <label for="n">Introducir n</label>
+            <form action="datos.php" method="post">
+                <label for="n">Introducir n para rellenar el Vector</label> <br>
+                <br>
                 <input type="number" name="n" > 
                 <input type="submit" value="Enviar">
             </form>
             </div>
-
+            
             <div class="menu">
                 <ul class="preguntas">
-                    
                     <li><a href="pregunta4.php">Pregunta 4</a></li>
                     <li><a href="pregunta5.php">Pregunta 5</a></li>
                     <li><a href="pregunta6.php">Pregunta 6</a></li>
-
                 </ul>
             </div>
         </div>

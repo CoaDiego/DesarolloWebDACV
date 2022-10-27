@@ -61,20 +61,44 @@
             </div>
 
             <div class="contenidoPrincipal">
-            <form action="mes.php" method="get">
-                <label for="n">Introducir n</label>
-                <input type="number" name="n" > 
-                <input type="submit" value="Enviar">
-            </form>
-            </div>
 
+            <?php
+            $n=$_POST['n'];
+            
+            for ($i=0; $i < $n; $i++) { 
+            
+                $vector[$i]=$_POST['numero'.$i];
+            }
+
+            sort($vector); 
+
+            
+            echo "Vector Ordenado de menor a mayor: <br>";
+
+            for($i=0; $i < $n; $i++){
+                $posicion = $vector[$i];
+                echo $posicion."<br>";
+            }
+
+            echo "Vector Ordenado de mayor a menor: <br>";
+
+            for($i=$n-1; $i > 0 ; $i--){
+                $posicion = $vector[$i];
+                echo $posicion."<br>";
+            }
+            $posicion = $vector[0];
+            echo $posicion."<br>";
+
+            ?>
+
+
+            </div>
+            
             <div class="menu">
                 <ul class="preguntas">
-                    
                     <li><a href="pregunta4.php">Pregunta 4</a></li>
                     <li><a href="pregunta5.php">Pregunta 5</a></li>
                     <li><a href="pregunta6.php">Pregunta 6</a></li>
-
                 </ul>
             </div>
         </div>

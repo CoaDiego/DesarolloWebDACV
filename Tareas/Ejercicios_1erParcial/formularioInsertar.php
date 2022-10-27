@@ -1,4 +1,3 @@
-
 <?php  
     if (isset($_COOKIE["nro_visitas"])) {
        $nro_visitas = $_COOKIE["nro_visitas"];
@@ -35,9 +34,7 @@
 
                         <div class="facuColor">Facultad de Tecnologia
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span style="color: red ;font-size: 15px;">Sucr
-                            <span style="color: yellow;">e-Bol</span>
-                            <span style="color: green;">ivia</span>
+                            <span style="color: red ;font-size: 15px;">Sucr<span style="color: yellow;">e-Bol</span><span style="color: green;">ivia</span>
                         </div>
               
 
@@ -61,20 +58,22 @@
             </div>
 
             <div class="contenidoPrincipal">
-            <form action="mes.php" method="get">
-                <label for="n">Introducir n</label>
-                <input type="number" name="n" > 
-                <input type="submit" value="Enviar">
-            </form>
+                <form action="insertarAlumno.php" method="post">
+                    <label for="cu">CU</label>
+                    <input type="number" name="cu" > <br>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" > <br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" > <br>
+                    <input type="submit" value="Insertar">
+                </form>
             </div>
 
             <div class="menu">
                 <ul class="preguntas">
-                    
                     <li><a href="pregunta4.php">Pregunta 4</a></li>
                     <li><a href="pregunta5.php">Pregunta 5</a></li>
                     <li><a href="pregunta6.php">Pregunta 6</a></li>
-
                 </ul>
             </div>
         </div>

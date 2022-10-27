@@ -35,9 +35,7 @@
 
                         <div class="facuColor">Facultad de Tecnologia
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span style="color: red ;font-size: 15px;">Sucr
-                            <span style="color: yellow;">e-Bol</span>
-                            <span style="color: green;">ivia</span>
+                            <span style="color: red ;font-size: 15px;">Sucr<span style="color: yellow;">e-Bol</span><span style="color: green;">ivia</span>
                         </div>
               
 
@@ -59,22 +57,29 @@
                     <li><a href="pregunta3.php">Pregunta 3</a></li>
                 </ul>
             </div>
-
             <div class="contenidoPrincipal">
-            <form action="mes.php" method="get">
-                <label for="n">Introducir n</label>
-                <input type="number" name="n" > 
-                <input type="submit" value="Enviar">
-            </form>
+
+            <?php
+            include("listaAlumnos.php");
+            session_start();
+            if (!isset($_SESSION['lista'])) {
+                $_SESSION['lista'] = new ListaAlumnos();
+            }
+            $cu = $_POST['cu'];
+            $nombre = $_POST['nombre'];
+            $apellido = $_POST['apellido'];
+            $alumno = new Alumnos($cu, $nombre, $apellido);
+            $_SESSION['lista']->Insertaralumno($alumno);
+            ?>
+            Se inserto correctamente
+            <meta http-equiv="refresh" content="3; url=pregunta3.php">
             </div>
 
             <div class="menu">
                 <ul class="preguntas">
-                    
                     <li><a href="pregunta4.php">Pregunta 4</a></li>
                     <li><a href="pregunta5.php">Pregunta 5</a></li>
                     <li><a href="pregunta6.php">Pregunta 6</a></li>
-
                 </ul>
             </div>
         </div>

@@ -33,10 +33,8 @@
                         <br>
 
                         <div class="facuColor">Facultad de Tecnologia
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <p class="rojo">SUCR</p>
-                            <p class="amarillo">E-BOL</p>
-                            <P class="verde">IVIA</P>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span style="color: red ;font-size: 15px;">Sucr<span style="color: yellow;">e-Bol</span><span style="color: green;">ivia</span>
                         </div>
               
 
@@ -55,6 +53,7 @@
                 <ul class="preguntas">
                     <li><a href="maqueta.php">Pregunta 1</a></li>
                     <li><a href="pregunta2.php">Pregunta 2</a></li>
+                    <li><a href="pregunta3.php">Pregunta 3</a></li>
                 </ul>
             </div>
             <div class="contenidoPrincipal">
@@ -66,8 +65,9 @@
             </div>
             <div class="menu">
                 <ul class="preguntas">
-                    <li><a href="">Pregunta 3</a></li>
-                    <li><a href="">Pregunta 4</a></li>
+                    <li><a href="pregunta4.php">Pregunta 4</a></li>
+                    <li><a href="pregunta5.php">Pregunta 5</a></li>
+                    <li><a href="pregunta6.php">Pregunta 6</a></li>
                 </ul>
             </div>
         </div>
