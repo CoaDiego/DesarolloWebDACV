@@ -1,0 +1,199 @@
+*{
+    /* text-align: center; */
+}
+.contenedor{
+    width: 900px;
+    height:600px;
+    border: 1px solid black;
+    margin: auto;
+
+}
+
+.encabezado{
+    background-color: rgb(198, 217, 2419) ;
+    box-sizing: border-box;
+    /* justify-content: center; */
+    /* text-align: center; */
+    height: auto;
+    /* border-bottom: 1px solid black; */
+}
+
+.titulo {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    padding-right: 20px;
+}
+#imagen{
+    width: 70px;
+    height: 80px;
+}
+
+#imagen2{
+    width: 70px;
+    height: 80px;
+}
+
+.logo2{
+    padding-left: 60px;
+}
+
+.universidad{
+    font-size: 30px;
+    color: red;
+}
+
+.facultad{
+    font-size: 25px;
+    color: blue;
+}
+
+.info{
+    text-align: center;
+    background-color: rgb(198, 217, 2419) ; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: black;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+.letras{
+    display: flex;
+    flex-basis: 95px; 
+    flex-direction: row;
+    justify-content: space-around ;
+    background-color: yellow;
+    border-bottom: 1px solid black;
+}
+
+.itemB{
+    background-color: white;
+    width: 110px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+
+
+
+.informacion{
+    display: flex;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:rgb(198, 217, 2419) ;
+}
+
+
+.menuIzquierda{
+    background-color: blue;
+    /* flex-basis: 200px; */
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    /* width: 100px; */
+    /* padding-left: 10px; */
+}
+
+.enblanco{
+    display: flex;
+}
+
+.contenido{
+    border-right: 1px solid black;
+    /* padding: 10px; */
+    flex-basis: 550px;
+    text-align: center;
+    background-color: white;
+}
+
+.info_derecha{
+    display: flex;
+    flex-basis: 150px;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.imagen{
+    border-top: 1px solid black;
+}
+
+.info1{
+    border-bottom: 1px solid black;
+    border: none;
+}
+
+ul.incisos {
+    flex-basis: auto;
+    list-style: none;
+    padding: 0;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;   
+}
+
+ul.incisos li a {
+    padding: 10px;
+    display: block;
+    border: 1px solid black;
+    /* align-content: space-around; */
+}
+
+ul.incisos li a:link,
+ul.incisos li a:visited {
+    text-decoration: none;
+    color: #333;
+    background-color: white ;
+}
+
+ul.incisos li a:hover {
+    background-color: rgb(142, 170, 219);
+}
+
+.contadorMensaje{
+    /* padding-top: 15px; */
+    height: 40px;
+    border-top: 1px solid black;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+    
+}
+
+.c2{
+    background-color: red;
+    padding-left: 5px;
+    width: 20px;
+    
+}
+
+.pie{
+    background-color: rgb(0, 112, 192) ;
+    height: auto;
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.rojo{
+    border: 1px solid black;
+    background-color: rgb(255, 0, 0);
+ 
+}
+.celeste{
+    border: 1px solid black;
+    background-color: rgb(0, 176, 240);
+   
+}
+.blanco{
+    border: 1px solid black;
+    background-color: white;
+   
+}
