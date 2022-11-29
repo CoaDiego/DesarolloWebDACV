@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        nombre = prompt("Ingrese la cadena: <br>");
+
+        cadena = nombre.split(",")
+        n = cadena.length;
+
+        document.write("Cadena ingresada: <br>")
+        for (i = 0; i < n; i++) {
+            if(i==n-1){
+                document.write(cadena[i])
+                break
+            }
+            document.write(cadena[i] + "-")
+        }
+        document.write("<br>")
+
+        cadena.sort();
+
+
+        document.write("Cadena ordenada de mayor a menor(descentente): <br>")
+        for (i = 0; i < n; i++) {
+            if(i==n-1){
+                document.write(cadena[i])
+                break
+            }
+            document.write(cadena[i] + "-")
+        }
+
+
+    </script>
+</body>
+
+</html>
