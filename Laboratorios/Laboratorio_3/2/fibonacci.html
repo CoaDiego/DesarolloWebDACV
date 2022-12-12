@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=}, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h3>Fibonacci</h3>
+
+	<div id="mensaje">Numero Ingresado</div>
+	<table>
+		<tr>
+			<td><input type="button" name="" id="1" onclick="calcular(1)" value="1"></td>
+			<td><input type="button" name="" id="2" onclick="calcular(2)" value="2"></td>
+			<td><input type="button" name="" id="3" onclick="calcular(3)" value="3"></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="" id="4" onclick="calcular(4)" value="4"></td>
+			<td><input type="button" name="" id="5" onclick="calcular(5)" value="5"></td>
+			<td><input type="button" name="" id="6" onclick="calcular(6)" value="6"></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="" id="7" onclick="calcular(7)" value="7"></td>
+			<td><input type="button" name="" id="8" onclick="calcular(8)" value="8"></td>
+			<td><input type="button" name="" id="9" onclick="calcular(9)" value="9"></td>
+		</tr>
+	</table>
+
+	<input type="c">
+
+	<script>
+		function calcular(n) {
+			n1 = 0;
+			n2 = 1;
+			n3=0;
+			console.log(n)
+
+			for (i = 1; i <= n - 1; i++) {
+				n3 = n1 + n2;
+				n1 = n2;
+				n2 = n3;
+			}
+			document.getElementById("mensaje").innerHTML = n3;
+		}
+
+
+	</script>
+
+
+</body>
+
+</html>
