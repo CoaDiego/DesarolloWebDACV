@@ -1,0 +1,147 @@
+.contenedor {
+    margin: auto;
+    height: auto;
+    width: 900px;   
+    box-sizing: border-box;
+}
+
+.encabezado {
+    display: flex;
+    border: 2px solid black;
+    border-bottom: none;
+}
+
+
+
+.imagen {
+    width: 20%;
+    border-right: 2px solid black;
+}
+
+.menuEncabezado {
+    width: 80%;
+}
+
+#menuHorizontal {
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+    border-bottom: 2px solid black;
+}
+
+ul#menuHorizontal {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    /* border-left: 1px solid black; */
+    flex-direction: row;
+    
+}
+
+ul#menuHorizontal li a {
+    padding: 17px;
+    display: inline-block;
+    border-right: 1px solid black;
+}
+
+ul#menuHorizontal li a:link,
+ul#menuHorizontal li a:visited {
+    margin: 1px;
+    text-decoration: none;
+    color: black;
+    background: rgb(201, 210, 211);
+    width: 100px;
+}
+
+ul#menuHorizontal li a:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+#titulo {
+    text-align: center;
+}
+
+.cuerpo {
+    display: flex;
+    border: 2px solid black;
+    height: auto;
+    width: auto;
+}
+
+#menu {
+    text-align: center;
+    width: 20%;
+}
+
+.asig{
+    padding: 18px;
+    border-bottom: 1px solid black;
+    background: rgb(201, 210, 211);
+}
+
+#asignaturas {
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+}
+
+ul#asignaturas  {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    /* border-left: 1px solid black; */
+    flex-direction: column;
+    
+}
+
+ul#asignaturas  li a {
+    padding: 20px;
+    display: inline-block;
+    border-bottom: 1px solid black;
+}
+
+ul#asignaturas  li a:link,
+ul#asignaturas  li a:visited {
+    margin: 1px;
+    text-decoration: none;
+    color: black;
+    background: rgb(201, 210, 211);
+    width: 100px;
+}
+
+ul#asignaturas  li a:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+#contenido {
+    justify-content: center;
+    border-left: 2px solid black;
+    padding: 10px;
+}
+
+#cuadroContenido {
+    border: 5px solid black;
+    padding: 10px;
+    text-align: left;
+    height: auto;
+    width: auto;
+}
+
+.semestre {
+    display: flex;
+}
+
+.año {
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 4px;
+}
+
+/* Seleccion de menu */
+.normal{
+    background-color: white;
+}
+
+.seleccionado{
+    background-color: gray;
+}
